@@ -180,10 +180,9 @@ details > summary {
     width: 100%;
 }
 
-/*is dit nodig om zwart driehoekje weg te halen...?
 details > summary::-webkit-details-marker {
     display: none
-} */
+} 
 
 details > summary::after {
     content: "☟";
