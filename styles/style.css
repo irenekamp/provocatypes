@@ -49,7 +49,6 @@ h3 {
 }
 
 p {
-   text-align: justify;
    margin: calc(0*var(--standaardMaat)) calc(.5*var(--standaardMaat)) calc(.8*var(--standaardMaat)) calc(.5*var(--standaardMaat));
 }
 
@@ -62,8 +61,7 @@ p {
 }
 
 ol{
-    text-align: justify;
-    margin: calc(0*var(--standaardMaat)) calc(.5*var(--standaardMaat)) calc(.8*var(--standaardMaat)) calc(.5*var(--standaardMaat));
+  margin: calc(0*var(--standaardMaat)) calc(.5*var(--standaardMaat)) calc(.8*var(--standaardMaat)) calc(.5*var(--standaardMaat));
 }
 
 a {
