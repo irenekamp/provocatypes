@@ -25,6 +25,10 @@ body {
     margin: 0;
 }
 
+span {
+    font-weight: bold;
+    cursor: help;
+}
 /* titels, paragraaf en lijstjes */
 
 h1 {
