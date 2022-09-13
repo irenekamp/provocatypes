@@ -13,6 +13,7 @@
       --rood: #ff3c35;
       --wit: #fff;
       --zwart:#000;
+      --achtergrond:#FFF4FD;
 }
 html {
     scroll-behavior: smooth;
@@ -148,8 +149,12 @@ article {
 }
 
 article:nth-of-type(even){
-    background-color: var(--roze);
+    background-color: var(--achtergrond);
+    border-style: dotted none;
+    border-color: var(--roze);
+
 }
+
 
 article > h2 {
     flex-shrink: 1;
