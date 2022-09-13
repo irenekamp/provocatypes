@@ -150,7 +150,8 @@ article {
 
 article:nth-of-type(even){
     background-color: var(--achtergrond);
-    border-style: dotted none;
+    border-style: dotted none ;
+    border-width: calc(.05*var(--standaardMaat));
     border-color: var(--roze);
 
 }
