@@ -143,19 +143,22 @@ article {
     flex-direction: row;
     flex-grow: 1 1;
     padding:calc(4*var(--standaardMaat)) calc(1*var(--standaardMaat)) calc(1*var(--standaardMaat)) calc(1*var(--standaardMaat));
-    margin-top:calc(1*var(--standaardMaat));
+    margin-top:calc(0*var(--standaardMaat));
     scroll-margin-top: calc(5*var(--standaardMaat));
+    border: none;
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-top */
 }
 
 article:nth-of-type(even){
-    background-color: var(--achtergrond);
-    border-style: dotted none ;
-    border-width: calc(.05*var(--standaardMaat));
-    border-color: var(--roze);
-
+    /* background-color: var(--achtergrond); */
+    /* border-style: dotted none ;
+    border-width: calc(.15*var(--standaardMaat));
+    border-color: var(--roze); */
+    background-image: repeating-linear-gradient(to bottom, var(--achtergrond), var(--achtergrond) calc(.05*var(--standaardMaat)), var(--wit)calc(.05*var(--standaardMaat)), var(--wit)calc(2*var(--standaardMaat)));
 }
-
+article:nth-of-type(odd){
+    background-image: repeating-linear-gradient(to right, var(--achtergrond), var(--achtergrond) calc(.05*var(--standaardMaat)), var(--wit)calc(.05*var(--standaardMaat)), var(--wit)calc(2*var(--standaardMaat)));
+}
 
 article > h2 {
     flex-shrink: 1;
@@ -188,7 +191,7 @@ details > summary {
     display: flex;
     justify-content: space-between;
 
-    background-color: var(--aqua);
+    background-color: var(--blauw);
 
     list-style: none;
     outline: none;
@@ -240,6 +243,10 @@ details[open] > summary::after {
         font-size: calc(1*var(--standaardMaat));
         margin: calc(.5*var(--standaardMaat)) calc(1.5*var(--standaardMaat)) calc(.25*var(--standaardMaat)) calc(1.5*var(--standaardMaat));
     }
+
+    /* article:nth-of-type(even){
+        background-image: linear-gradient(45deg, var(--roze), var(--roze) 10%, var(--wit)25%); */
+    
 }
 
 /* @media only screen and (min-width: 1600px) {
