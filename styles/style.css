@@ -80,7 +80,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color:var(--aqua);
+    color:var(--blauw);
 }
 
 footer > a {
